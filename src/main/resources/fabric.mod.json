@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "fpsboost",
+  "version": "${version}",
+  "name": "FPS Boost Optimizer",
+  "description": "Lunar/Feather-style FPS optimizer with 20+ toggleable modules. Performance, HUD, and visual enhancements for Minecraft. Optimized for Zalith Launcher (Android) and desktop.",
+  "authors": ["FPSBoost"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/fpsboost/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.fpsboost.FPSBoostMod"]
+  },
+  "mixins": ["fpsboost.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

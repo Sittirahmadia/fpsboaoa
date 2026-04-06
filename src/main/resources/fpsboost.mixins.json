@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.fpsboost.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "GameRendererMixin",
+    "LightmapTextureManagerMixin",
+    "InGameHudMixin",
+    "ParticleManagerMixin",
+    "WorldRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
