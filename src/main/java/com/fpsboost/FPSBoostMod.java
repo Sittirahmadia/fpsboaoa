@@ -19,11 +19,11 @@ public class FPSBoostMod implements ClientModInitializer {
         // Initialize all modules
         ModuleManager.get().init();
 
-        // Register GUI keybinding (Right Shift)
+        // Register GUI keybinding (0)
         openGuiKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
                 "key.fpsboost.open_gui",
                 InputUtil.Type.KEYSYM,
-                GLFW.GLFW_KEY_RIGHT_SHIFT,
+                GLFW.GLFW_KEY_0,
                 "category.fpsboost"
         ));
 
@@ -40,6 +40,6 @@ public class FPSBoostMod implements ClientModInitializer {
             ModuleManager.get().renderAll(tickCounter.getTickDelta(true));
         });
 
-        System.out.println("[FPSBoost] Mod initialized! " + ModuleManager.get().countEnabled() + " modules active. Press Right Shift for GUI.");
+        System.out.println("[FPSBoost] Mod initialized! " + ModuleManager.get().countEnabled() + " modules active. Press 0 for GUI.");
     }
 }
